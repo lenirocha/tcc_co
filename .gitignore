@@ -1,0 +1,10 @@
+# KNIME - dados gerados pelos nós
+**/internal/
+**/port_*/
+**/data/
+.metadata/
+*.lock
+
+# Power BI - arquivos temporários
+*.pbix.bak
+~$*
