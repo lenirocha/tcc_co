@@ -2,7 +2,7 @@
 
 A implementação foi feita no **KNIME Analytics Platform** e a apresentação dos resultados no **Power BI**.
 
-## Estrutura do repositório
+## Estrutura do repositorio
 
 ```
 .
