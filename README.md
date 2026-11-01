@@ -94,6 +94,7 @@ Cada caixa na tela é um nó, que executa uma etapa do processamento. As setas i
 O indicador abaixo de cada nó mostra o seu estado:
 
 **Cor e Significado**
+
 Vermelho: nó não configurado (precisa de ajuste)
 Amarelo:	nó configurado, mas ainda não executado
 Verde:	nó executado com sucesso
@@ -115,17 +116,24 @@ O caminho do arquivo de dados aponta para o computador onde o projeto foi desenv
 
 7. Executar o workflow
 - Clique no botão Execute all (ícone de duas setas ▶▶), na barra superior da tela do workflow.
-Aguarde até que os indicadores dos nós fiquem verdes. A execução completa pode levar alguns minutos, por causa do KNN Imputer e do Random Forest.
-Para executar apenas uma parte, clique com o botão direito sobre um nó e escolha Execute; os nós anteriores a ele também são executados.
+- Aguarde até que os indicadores dos nós fiquem verdes. A execução completa pode levar alguns minutos, por causa do KNN Imputer e do Random Forest.
+- Para executar apenas uma parte, clique com o botão direito sobre um nó e escolha Execute; os nós anteriores a ele também são executados.
+
 8. Visualizar os resultados
-Clique uma vez sobre um nó com indicador verde.
+- Clique uma vez sobre um nó com indicador verde.
 A tabela de saída desse nó aparece no painel inferior da tela.
+
 Os nós Numeric Scorer mostram as métricas (RMSE, MAE e R²) de cada combinação.
+
 A tabela consolidada com as 18 combinações também está disponível na pasta resultados/, que pode ser aberta diretamente no Excel, sem o KNIME.
 Problemas comuns
+
 Nó vermelho com aviso de arquivo não encontrado: o caminho do dataset não foi ajustado (passo 6).
+
 Erro nos nós Python Script: a extensão Python não foi instalada ou o KNIME não foi reiniciado após a instalação (passo 3). Caso o erro mencione sklearn, acesse ☰ → Preferences → KNIME → Python e confirme que a opção Bundled está selecionada.
+
 Aviso sobre extensões ausentes ao abrir o workflow: clique na opção oferecida pelo próprio KNIME para buscar e instalar as extensões indicadas.
+
 ### Power BI
 
 1. Abra o arquivo `.pbix` no Power BI Desktop.
@@ -138,6 +146,3 @@ Aviso sobre extensões ausentes ao abrir o workflow: clique na opção oferecida
 - Python (pandas, scikit-learn) via KNIME Python Integration
 - Power BI Desktop
 
-## Autoria
-
-Leni — curso de Sistemas de Informação, <nome da instituição>, <ano>.
